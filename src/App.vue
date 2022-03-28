@@ -1,28 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!--Header.vue-->
+    <Header />
+    <main>
+      <!--Contents.vue-->
+    <Contents />
+      <!--Component chiamato Elements.vue-->
+    <Elements />
+    </main>
+    <!--TopFooter.vue-->
+    <TopFooter />
+    <!--BottomFooter.vue-->
+    <BottomFooter />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Contents from './components/Contents.vue'
+import TopFooter from './components/TopFooter.vue'
+import BottomFooter from './components/BottomFooter.vue'
+import Elements from './components/Elements.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Contents,
+    TopFooter,
+    Elements,
+    BottomFooter
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap');
+body{
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  min-width: 1900px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
