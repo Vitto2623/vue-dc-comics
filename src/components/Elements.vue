@@ -32,13 +32,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/scss/partials/_variables';
 #wrapper {
   width: 100%;
   height: 150px;
   padding: 30px;
-  background-color: #0282f9;
+  background-color: $ColorBrand;
   .elements-container {
     margin: 0 auto;
+    padding: 50px 90px;
     width: 67%;
     height: 100%;
     display: flex;

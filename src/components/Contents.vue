@@ -6,6 +6,7 @@
         <img :src="element.thumb" alt="">
         <h4>{{element.series}}</h4>
       </div>
+      <button>LOAD MORE</button>
     </div>
   </div>
 </template>
@@ -95,11 +96,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/scss/partials/_variables.scss';
 #wrapper {
   width: 100%;
   background-color: #1c1c1c;
   .contents-container {
-    padding: 38px 0px 38px 44px;
+    padding: 38px 0px 25px 44px;
     position: relative;
     width: 68%;
     height: 100%;
@@ -112,7 +114,7 @@ export default {
       position: absolute;
       top: -29px;
       left: 38px;
-      background-color: #0282f9;
+      background-color: $ColorBrand;
       padding: 10px 30px;
       font-size: 1.5rem;
     }
@@ -128,5 +130,14 @@ export default {
         width: 181px;
     }
   }
+  button{
+      background-color: $ColorBrand;
+      border: none;
+      color: white;
+      padding: 10px 30px;
+      margin-top: 20px;
+      font-weight: 900;
+      cursor: pointer;
+    }
 }
 </style>

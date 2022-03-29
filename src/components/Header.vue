@@ -81,6 +81,9 @@ export default {
 #header {
   width: 100%;
   height: 115px;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 2;
   #nav-container {
     display: flex;
     justify-content: space-between;

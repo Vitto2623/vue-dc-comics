@@ -12,7 +12,9 @@ export default {
 <style scoped>
 .jumbotron{
   width: 100%;
-  height: 420px;
+  height: 540px;
   background-image: url('../assets/img/jumbotron.jpg');
+  background-size: cover;
+  background-position-y: 115px;
 }
 </style>
