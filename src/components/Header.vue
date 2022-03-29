@@ -1,10 +1,12 @@
 <template>
   <div id="header">
     <div id="nav-container">
-      <img src="../assets/img/dc-logo.png" alt="" />
+      <a href="#">
+        <img src="../assets/img/dc-logo.png" alt="" />
+      </a>
       <nav>
         <ul>
-          <li v-for="(link, index) in HeaderLinks" :key="index">
+          <li v-for="(link, index) in HeaderLinks" :key="index" :class="{active: link.current}">
             <a :class="{ active: link.current }" href="#">{{ link.text }}</a>
           </li>
         </ul>
@@ -27,7 +29,7 @@ export default {
         {
           text: 'COMICS',
           url: '#',
-          current: false
+          current: true
         },
         {
           text: 'MOVIES',
@@ -88,6 +90,7 @@ export default {
     background-color: white;
     img {
       padding: 20px;
+      width: 7.40rem;
     }
   }
 }
@@ -103,11 +106,19 @@ ul {
     &:hover {
       border-bottom: 4px solid #0282f9;
     }
+    &.active{
+        border-bottom: 4px solid #0282f9;
+        color: #0282f9;
+      }
     a {
       text-decoration: none;
       color: black;
-      font-weight: bolder;
+      font-weight: 900;
       &:hover {
+        color: #0282f9;
+      }
+      &:active,
+      &.active{
         color: #0282f9;
       }
     }

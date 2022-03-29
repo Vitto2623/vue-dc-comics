@@ -2,6 +2,8 @@
   <div id="app">
     <!--Header.vue-->
     <Header />
+    <!--Jumbotron.vue-->
+    <Jumbotron />
     <main>
       <!--Contents.vue-->
     <Contents />
@@ -21,7 +23,7 @@ import Contents from './components/Contents.vue'
 import TopFooter from './components/TopFooter.vue'
 import BottomFooter from './components/BottomFooter.vue'
 import Elements from './components/Elements.vue'
-
+import Jumbotron from './components/Jumbotron.vue'
 export default {
   name: 'App',
   components: {
@@ -29,7 +31,8 @@ export default {
     Contents,
     TopFooter,
     Elements,
-    BottomFooter
+    BottomFooter,
+    Jumbotron
   }
 }
 </script>

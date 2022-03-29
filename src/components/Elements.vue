@@ -47,10 +47,10 @@ export default {
     color: white;
     .container{
         img{
-        width: 50px;
-        margin-right: 19px;
-        vertical-align: middle;
-    }
+            width: 50px;
+            margin-right: 19px;
+            vertical-align: middle;
+        }
         span{
             font-size: 0.9rem;
         }

@@ -167,22 +167,22 @@ export default {
       background-position-y: -6rem;
     }
     nav{
-      display: flex;
-      gap: 50px;
-      margin-top: 30px;
-      h4{
-        color: white;
-      }
-      li{
-      list-style: none;
-      a{
-        text-decoration: none;
-        color: grey;
-        &:hover{
-          color: rgb(0, 123, 255);
+        display: flex;
+        gap: 50px;
+        margin-top: 30px;
+        h4{
+          color: white;
+        }
+        li{
+          list-style: none;
+          a{
+            text-decoration: none;
+            color: grey;
+            &:hover{
+              color: rgb(0, 123, 255);
+          }
         }
       }
-    }
     }
 }
 </style>
